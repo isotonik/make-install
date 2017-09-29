@@ -14,7 +14,7 @@ tar -xzf make-install.tar.gz -C make-install
 # Remove tar file
 rm make-install.tar.gz
 
-# Change Directory
+# Change directory
 cd make-install
 
 # Execute INSTALL
