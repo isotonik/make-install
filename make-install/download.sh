@@ -27,81 +27,81 @@ exitstatus=$?
 if [ $exitstatus = 0 ]; then
     echo  ne 'Adding ppa for :' $SOFTWARE
 
-    while read choice
-    do
+  while read choice
+  do
 	case $choice in
 		Atom) sudo add-apt-repository ppa:webupd8team/atom -y
-   		echo -ne '....                                                 \r'
+   	echo -ne '....                                                 \r'
 		;;
 		Chromium) sudo add-apt-repository ppa:saiarcot895/chromium-dev -y
 		echo -ne '........                                             \r'
 		;;
-        Audacity) sudo add-apt-repository ppa:ubuntuhandbook1/audacity -y
+    Audacity) sudo add-apt-repository ppa:ubuntuhandbook1/audacity -y
 		echo -ne '............                                         \r'
-        ;;
-        qbittorrent) sudo add-apt-repository ppa:qbittorrent-team/qbittorrent-stable -y
+    ;;
+    qbittorrent) sudo add-apt-repository ppa:qbittorrent-team/qbittorrent-stable -y
 		echo -ne '................                                     \r'
-    	;;
-        Blender) sudo add-apt-repository ppa:thomas-schiex/blender -y
+  	;;
+    Blender) sudo add-apt-repository ppa:thomas-schiex/blender -y
 		echo -ne '....................                                 \r'
-        ;;
-        Brackets) sudo add-apt-repository ppa:webupd8team/brackets -y
+    ;;
+    Brackets) sudo add-apt-repository ppa:webupd8team/brackets -y
 		echo -ne '........................                             \r'
-        ;;
-        Codeblocks) sudo add-apt-repository ppa:mail6543210/codeblocks -y
+    ;;
+    Codeblocks) sudo add-apt-repository ppa:mail6543210/codeblocks -y
 		echo -ne '.............................                        \r'
-        ;;
-        Darktable) sudo add-apt-repository ppa:pmjdebruijn/darktable-1-6-testing -y
+    ;;
+    Darktable) sudo add-apt-repository ppa:pmjdebruijn/darktable-1-6-testing -y
 		echo -ne '.................................                    \r'
-        ;;
-        Evolution) sudo add-apt-repository ppa:julenlanda/evolution -y
+    ;;
+    Evolution) sudo add-apt-repository ppa:julenlanda/evolution -y
 		echo -ne '.....................................                \r'
-        ;;
-        Geary) sudo add-apt-repository ppa:geary-team/releases -y
-		echo -ne '.......................................              \r'
-        ;;
-        Gimp) sudo add-apt-repository ppa:otto-kesselgulasch/gimp -y
+    ;;
+    Geary) sudo add-apt-repository ppa:geary-team/releases -y
+  	echo -ne '.......................................              \r'
+    ;;
+    Gimp) sudo add-apt-repository ppa:otto-kesselgulasch/gimp -y
 		echo -ne '.........................................            \r'
-        ;;
-        Neofetch) sudo add-apt-repository ppa:dawidd0811/neofetch -y
+    ;;
+    Neofetch) sudo add-apt-repository ppa:dawidd0811/neofetch -y
 		echo -ne '............................................         \r'
-        ;;
-        Skype) sudo add-apt-repository ppa:andykimpe/skype -y
+    ;;
+    Skype) sudo add-apt-repository ppa:andykimpe/skype -y
 		echo -ne '..............................................       \r'
-        ;;
-        Steamcmd) sudo add-apt-repository ppa:ev1l0rd/steamcmddl -y
+    ;;
+    Steamcmd) sudo add-apt-repository ppa:ev1l0rd/steamcmddl -y
 		echo -ne '...............................................       \r'
-        ;;
-        Sublime-text) sudo add-apt-repository ppa:webupd8team/sublime-text-2 -y
+    ;;
+    Sublime-text) sudo add-apt-repository ppa:webupd8team/sublime-text-2 -y
 		echo -ne '................................................      \r'
-        ;;
-        Telegram) sudo add-apt-repository ppa:atareao/telegram -y
+    ;;
+    Telegram) sudo add-apt-repository ppa:atareao/telegram -y
 		echo -ne '.................................................     \r'
-        ;;
-        Tomahawk) sudo add-apt-repository ppa:tomahawk/ppa -y
+    ;;
+    Tomahawk) sudo add-apt-repository ppa:tomahawk/ppa -y
 		echo -ne '..................................................    \r'
-        ;;
-        Tor-browser) sudo add-apt-repository ppa:webupd8team/tor-browser -y
+    ;;
+    Tor-browser) sudo add-apt-repository ppa:webupd8team/tor-browser -y
 		echo -ne '...................................................   \r'
-        ;;
-        Unity-tweak-tool) sudo add-apt-repository ppa:tribaal/unity-tweak-tool -y
+    ;;
+    Unity-tweak-tool) sudo add-apt-repository ppa:tribaal/unity-tweak-tool -y
 		echo -ne '..................................................... \r'
-        ;;
-        Uget) sudo add-apt-repository ppa:plushuang-tw/uget-stable -y
+    ;;
+    Uget) sudo add-apt-repository ppa:plushuang-tw/uget-stable -y
 		echo -ne '..................................................... \r'
-        ;;
-        VLC) sudo add-apt-repository ppa:n-muench/vlc2 -y
+    ;;
+    VLC) sudo add-apt-repository ppa:n-muench/vlc2 -y
 		echo -ne '......................................................\r'
-        ;;
-        *)
-        ;;
-    	esac
-    done < hashfile
+    ;;
+    *)
+    ;;
+  esac
+  done < hashfile
 
-    sudo apt update
+  sudo apt update
 
-    while read choice
-    do
+  while read choice
+  do
 	case $choice in
 		Atom) sudo apt install atom -y
 		echo -ne '.....                                                 \r'
@@ -109,67 +109,67 @@ if [ $exitstatus = 0 ]; then
 		Chromium) sudo apt install chromium-browser -y
 		echo -ne '.......                                               \r'
 		;;
-        Audacity) sudo apt install audacity -y
+    Audacity) sudo apt install audacity -y
 		echo -ne '...........                                           \r'
-        ;;
-        qbittorrent) sudo apt install qbittorrent -y
+    ;;
+    qbittorrent) sudo apt install qbittorrent -y
 		echo -ne '..............                                        \r'
-   		;;
-        Blender) sudo apt install blender -y
+ 		;;
+    Blender) sudo apt install blender -y
 		echo -ne '.................                                     \r'
-        ;;
-        Brackets) sudo apt install brackets -y
+    ;;
+    Brackets) sudo apt install brackets -y
 		echo -ne '.....................                                 \r'
-        ;;
-        Codeblocks) sudo apt install codeblocks -y
+    ;;
+    Codeblocks) sudo apt install codeblocks -y
 		echo -ne '.........................                             \r'
-        ;;
-        Darktable) sudo apt install darktable -y
+    ;;
+    Darktable) sudo apt install darktable -y
 		echo -ne '............................                          \r'
-        ;;
-        Evolution) sudo apt install evolution -y
+    ;;
+    Evolution) sudo apt install evolution -y
 		echo -ne '...............................                       \r'
-        ;;
-        Geary) sudo apt install geary -y
+    ;;
+    Geary) sudo apt install geary -y
 		echo -ne '.................................                     \r'
-        ;;
-        Gimp) sudo apt install gimp -y
+    ;;
+    Gimp) sudo apt install gimp -y
 		echo -ne '....................................                  \r'
-        ;;
-        Neofetch) sudo apt install neofetch -y
+    ;;
+    Neofetch) sudo apt install neofetch -y
 		echo -ne '.......................................               \r'
-        ;;
-        Skype) sudo apt install skype -y
+    ;;
+    Skype) sudo apt install skype -y
 		echo -ne '.........................................             \r'
-        ;;
-        Steamcmd) sudo apt install steamcmddl -y
+    ;;
+    Steamcmd) sudo apt install steamcmddl -y
 		echo -ne '...........................................           \r'
-        ;;
-        Sublime-text) sudo apt install sublime-text -y
+    ;;
+    Sublime-text) sudo apt install sublime-text -y
 		echo -ne '..............................................        \r'
-        ;;
-        Telegram) sudo apt update telegram -y
+    ;;
+    Telegram) sudo apt update telegram -y
 		echo -ne '................................................      \r'
-        ;;
-        Tomahawk) sudo apt install tomahawk -y
+    ;;
+    Tomahawk) sudo apt install tomahawk -y
 		echo -ne '..................................................    \r'
-        ;;
-        Tor-browser) sudo apt install tor-browser  -y
+    ;;
+    Tor-browser) sudo apt install tor-browser  -y
 		echo -ne '...................................................   \r'
-        ;;
-        Unity-tweak-tool) sudo apt install unity-tweak-tool -y
+    ;;
+    Unity-tweak-tool) sudo apt install unity-tweak-tool -y
 		echo -ne '....................................................  \r'
-        ;;
-        Uget) sudo apt install uget -y
+    ;;
+    Uget) sudo apt install uget -y
 		echo -ne '..................................................... \r'
-        ;;
-        VLC) sudo apt install vlc -y
+    ;;
+    VLC) sudo apt install vlc -y
 		echo -ne '......................................................\r'
-        ;;
-        *)
-        ;;
-    	esac
-    done < hashfile
+    ;;
+    *)
+    ;;
+	 esac
+done < hashfile
 
 else
     echo -ne 'Terminating....                                                 \r'
